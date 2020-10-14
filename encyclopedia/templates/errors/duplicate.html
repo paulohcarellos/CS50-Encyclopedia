@@ -1,0 +1,10 @@
+{% extends "errors/errorLayout.html" %}
+
+{% block message %}
+    <span>
+        The entry you are trying to create already exists.
+        You can click
+    </span>
+    <a href="{% url 'entry' title %}">here</a>
+    <span> to access it</span>
+{% endblock %}
