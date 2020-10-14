@@ -1,9 +1,0 @@
-{% extends "errors/errorLayout.html" %}
-
-{% block message %}
-<span>
-    An entry with this exact title does not exist. 
-    Please search for "{{ title }}" in the search box or
-</span>
-<a href="{% url 'new' %}">create a new page</a>.
-{% endblock %}
